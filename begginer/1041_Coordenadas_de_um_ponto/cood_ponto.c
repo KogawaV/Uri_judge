@@ -13,6 +13,10 @@ int main(){
         printf("Q3\n");
     }else if((cood_x > 0.0) && (cood_y < 0.0)){
         printf("Q4\n");
+    }else if((cood_y == 0) && (cood_x != 0)){
+        printf("Eixo X\n");
+    }else if((cood_x == 0) && (cood_y != 0)){
+        printf("Eixo Y\n");
     }else{
         printf("Origem\n");
     }

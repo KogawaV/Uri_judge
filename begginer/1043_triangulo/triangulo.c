@@ -28,12 +28,12 @@ double perimetro_triangulo(double lado_a, double lado_b, double lado_c){
     double perimetro = 0.00;
 
     perimetro = (lado_a + lado_b + lado_c);
-    printf("Perimetro = %.1lf\n.", perimetro);
+    printf("Perimetro = %.1lf", perimetro);
 }
 
 double area_trapezio(double base_a, double base_b, double altura_c){
     double area = 0.00;
 
     area = (((base_a + base_b)*altura_c)/2);
-    printf("Area = %.1lf\n", area);
+    printf("Area = %.1lf", area);
 }
