@@ -9,20 +9,20 @@
     e) a área do retângulo que tem lados A e B. 
 */
 
-float area_triangulo(float base, float altura);
-float area_circulo(float raio);
-float area_trapezio(float base_menor, float base_maior, float altura);
-float area_quadrado(float lado_quadrado);
-float area_retangulo(float lado_retangulo_a, float lado_retangulo_b);
+double area_triangulo(double base, double altura);
+double area_circulo(double raio);
+double area_trapezio(double base_menor, double base_maior, double altura);
+double area_quadrado(double lado_quadrado);
+double area_retangulo(double lado_retangulo_a, double lado_retangulo_b);
 
-float area_do_triangulo;
-float area_do_circulo;
-float area_do_trapezio;
-float area_do_quadrado;
-float area_do_retangulo;
+double area_do_triangulo;
+double area_do_circulo;
+double area_do_trapezio;
+double area_do_quadrado;
+double area_do_retangulo;
 
 int main(){
-        float valor_a = 0.0, valor_b = 0.0, valor_c = 0.0;
+        double valor_a = 0.0, valor_b = 0.0, valor_c = 0.0;
          
         scanf("%f %f %f", &valor_a, &valor_b, &valor_c);
 
@@ -32,50 +32,50 @@ int main(){
         area_quadrado(valor_b);
         area_retangulo(valor_a, valor_b);
 
-        printf("TRIANGULO: %.3f\n", area_triangulo);
-        printf("CIRCULO: %.3f\n", area_circulo);
-        printf("TRAPEZIO: %.3f\n", area_trapezio);
-        printf("QUADRADO: %.3f\n", area_quadrado);
-        printf("RETANGULO: %.3f\n", area_retangulo);
+        printf("TRIANGULO: %.3lf\n", area_triangulo);
+        printf("CIRCULO: %.3lf\n", area_circulo);
+        printf("TRAPEZIO: %.3lf\n", area_trapezio);
+        printf("QUADRADO: %.3lf\n", area_quadrado);
+        printf("RETANGULO: %.3lf\n", area_retangulo);
 
     return 0;
 }
 
-float area_triangulo(float base, float altura){
-    //float area_triangulo = 0.00;
+double area_triangulo(double base, double altura){
+    //double area_triangulo = 0.00;
 
     area_do_triangulo = ((base * altura)/2);
 
     return area_do_triangulo;
 }
 
-float area_circulo(float raio){
+double area_circulo(double raio){
     int pi = 3.14159;
-    //float area_circulo = 0.00;
+    //double area_circulo = 0.00;
 
     area_do_circulo = (pi * pow(raio, 2));
 
     return area_do_circulo;
 }
 
-float area_trapezio(float base_menor, float base_maior, float altura){
-    //float area_trapezio = 0.00; 
+double area_trapezio(double base_menor, double base_maior, double altura){
+    //double area_trapezio = 0.00; 
 
     area_do_trapezio = (((base_maior + base_menor)*altura)/2);
 
     return area_do_trapezio;
 }
 
-float area_quadrado(float lado_quadrado){
-    //float area_quadrado = 0.00;
+double area_quadrado(double lado_quadrado){
+    //double area_quadrado = 0.00;
 
     area_do_quadrado = (lado_quadrado * lado_quadrado);
 
     return area_do_quadrado;
 }
 
-float area_retangulo(float lado_retangulo_a, float lado_retangulo_b){
-    //float area_retangulo = 0.00;
+double area_retangulo(double lado_retangulo_a, double lado_retangulo_b){
+    //double area_retangulo = 0.00;
 
     area_do_retangulo = (lado_retangulo_a * lado_retangulo_b);
 

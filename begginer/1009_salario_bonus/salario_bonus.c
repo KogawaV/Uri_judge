@@ -18,7 +18,7 @@ int main(){
 
     salario_final = ((vendas_totais * 15)/100) + salario_fixo;
 
-    printf("TOTAL = %.2f\n", salario_final);
+    printf("TOTAL = R$ %.2f\n", salario_final);
 
 
     //printf("%s\n%f\n%f", nome, salario_fixo, vendas_totais);

@@ -1,20 +1,19 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
 
 int main(){
-    int vetor_valores[3], maior = 0;
+    int valor_a = 0, valor_b = 0, valor_c = 0, maior_valor_entre_os_dois_primeiros = 0, maior_valor = 0;
 
-    scanf("%d %d %d", &vetor_valores[0], &vetor_valores[1], &vetor_valores[2]);
+    scanf("%d %d %d", &valor_a, &valor_b, &valor_c);
 
-    //printando o vetor
-    /*for(int i = 0; i < 3; i++){
-        printf("[%d] ", vetor_valores[i]);
-    }*/
+    maior_valor_entre_os_dois_primeiros = ((valor_a + valor_b + fabs(valor_a - valor_b)) / 2);
+    //printf("Maior valor entre os dois primeiros: %d\n", maior_valor_entre_os_dois_primeiros);
 
-    for(int i = 0; i <  3; i++){
-        if(vetor_valores[i] > vetor_valores[i + 1]){
-            printf("%d eh o maior.\n", vetor_valores[i]);
-            break;
-        }
+    if(maior_valor_entre_os_dois_primeiros > valor_c){
+        printf("%d eh o maior\n", maior_valor_entre_os_dois_primeiros);
+    }else{
+        printf("%d eh o maior\n", valor_c);
     }
 
     return 0;

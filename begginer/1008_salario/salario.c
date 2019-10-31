@@ -10,7 +10,7 @@ int main(){
 
     salario = (horas_trabalhadas_um_mes * qtd_hora_trab);
 
-    printf("NUMBER = %d\nSALARIO = %.2f\n", numero_funcionario, salario);
+    printf("NUMBER = %d\nSALARY = U$ %.2f\n", numero_funcionario, salario);
 
     return 0;
 }
